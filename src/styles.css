@@ -1,0 +1,120 @@
+body.homePage{
+    background-image: url("assets/images/background.jpeg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: left bottom;
+}
+body.menuPage{
+    background-image: url("assets/images/background2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right top;
+}
+body.aboutPage{
+    background-image: url("assets/images/background3.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+@font-face{
+    font-family: roboto;
+    src: url("https://fonts.gstatic.com/s/exo/v12/4UaZrEtFpBI4f1ZSIK9d4LjJ4lM2OwRmOw.woff2");
+}
+
+@font-face{
+    font-family: robotoItalic;
+    src: url("https://fonts.gstatic.com/s/exo/v12/4UafrEtFpBISdmSt-MY2ehbO95t040FWOXYt.woff2");
+}
+h1, h2{
+    font-family: roboto;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#logo{
+    height: 70px;
+    width: 90px;
+    margin: auto;
+    margin-right: 10px;
+    padding: 5px;
+}
+h1{
+    width: 500px;   
+    font-size: 67px;
+    white-space: nowrap;
+    font-family: roboto;
+    color: rgb(255, 255, 255);
+    line-height: 2.6em;
+}
+#homeSubtitle{
+    font-size: 30px;
+    font-family: robotoItalic;
+    color: rgb(255, 255, 255);
+    line-height: 2.6em;
+}
+
+#nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: roboto;
+    margin: -8px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    opacity: 70%;
+}
+a{
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    text-align:center;
+    padding-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#content{
+    display: block;
+    margin: auto;
+    margin-top: 160px;
+    width: 90vw;
+}
+.menuPanel, .aboutPanel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 85vw;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: #F5F5DC;
+}
+.aboutPanel{
+    line-height: 2em;
+    tab-size: 8;
+    padding: 20px;
+}
+#sidesMessage{
+    grid-column: span 2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.itemContainer{
+    margin: 20px;
+}
+.thumbnail{
+    display: block;
+    margin: auto;
+    height: 20vw;
+    width: 30vw;
+    max-height: 240px;
+    max-width: 360px;
+}
+#chefPic{
+    max-height: 40vw;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
